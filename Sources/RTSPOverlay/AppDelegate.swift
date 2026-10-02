@@ -1,6 +1,7 @@
 import AppKit
 import SwiftUI
 import Combine
+import ServiceManagement
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let store = CameraStore.shared
@@ -60,6 +61,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             menu.addItem(item(String(localized: "Re-enable clicks on overlays"), #selector(restoreClicks)))
         }
         menu.addItem(.separator())
+        let login = item(String(localized: "Launch at Login"), #selector(toggleLaunchAtLogin))
+        login.state = SMAppService.mainApp.status == .enabled ? .on : .off
+        menu.addItem(login)
         menu.addItem(item(String(localized: "Settings…"), #selector(showSettings), key: ","))
         menu.addItem(item(String(localized: "Quit"), #selector(NSApplication.terminate(_:)), key: "q", target: NSApp))
     }
@@ -82,6 +86,24 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     @objc private func openAll() { store.cameras.forEach { openOverlay($0) } }
 
     @objc private func closeAll() { overlays.values.forEach { $0.close() } }
+
+    @objc private func toggleLaunchAtLogin() {
+        let service = SMAppService.mainApp
+        do {
+            if service.status == .enabled {
+                try service.unregister()
+            } else {
+                try service.register()
+            }
+        } catch {
+            let alert = NSAlert(error: error)
+            alert.messageText = String(localized: "Could not change the login item")
+            NSApp.activate()
+            alert.runModal()
+        }
+        // Se macOS richiede l'approvazione dell'utente, apre Impostazioni di Sistema > Elementi login
+        if service.status == .requiresApproval { SMAppService.openSystemSettingsLoginItems() }
+    }
 
     @objc private func restoreClicks() { overlays.values.forEach { $0.setClickThrough(false) } }
 

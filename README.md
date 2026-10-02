@@ -44,7 +44,7 @@ The app has no Dock icon: look for the 📹 icon in the menu bar. On first launc
 - macOS asks for **Local Network** access: allow it, otherwise the app cannot reach the cameras.
   You can change it later in System Settings → Privacy & Security → Local Network.
 - Add your cameras in the settings window (see [Configuration](#configuration)).
-- Optional: to start the app automatically, add it in System Settings → General → Login Items.
+- Optional: to start the app automatically, tick **Launch at Login** in the menu bar menu.
 
 Since you build the app yourself, Gatekeeper does not block it. If you copy the built app to another Mac
 and macOS refuses to open it, run `xattr -dr com.apple.quarantine /Applications/RTSPOverlay.app`.

@@ -84,3 +84,5 @@
 "No video track in the stream" = "Nessuna traccia video nello stream";
 "unknown" = "sconosciuto";
 "Unsupported video codec: %@. Set H.264 or H.265 on the camera" = "Codec video non supportato: %@. Imposta H.264 o H.265 sulla telecamera";
+"Launch at Login" = "Apri al login";
+"Could not change the login item" = "Impossibile modificare l'apertura al login";

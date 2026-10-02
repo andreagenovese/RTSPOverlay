@@ -44,7 +44,7 @@ L'app non ha icona nel Dock: cerca l'icona 📹 nella barra dei menu. Al primo a
 - macOS chiede il permesso per la **rete locale**: va concesso, altrimenti l'app non raggiunge le telecamere.
   Si può cambiare in seguito da Impostazioni di Sistema → Privacy e sicurezza → Rete locale.
 - Aggiungi le telecamere nella finestra delle impostazioni (vedi [Configurazione](#configurazione)).
-- Facoltativo: per avviarla automaticamente, aggiungila in Impostazioni di Sistema → Generali → Elementi login.
+- Facoltativo: per avviarla automaticamente, spunta **Apri al login** nel menu della barra.
 
 Dato che l'app la compili tu, Gatekeeper non la blocca. Se copi l'app compilata su un altro Mac
 e macOS si rifiuta di aprirla, esegui `xattr -dr com.apple.quarantine /Applications/RTSPOverlay.app`.
