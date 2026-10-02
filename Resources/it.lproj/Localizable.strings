@@ -1,0 +1,86 @@
+/* Traduzione italiana. Le chiavi sono il testo inglese usato nel codice. */
+
+/* Barra dei menu */
+"No cameras configured" = "Nessuna telecamera configurata";
+"Open all as overlays" = "Apri tutte in overlay";
+"Close all overlays" = "Chiudi tutti gli overlay";
+"Grid with all cameras" = "Griglia con tutte le telecamere";
+"Re-enable clicks on overlays" = "Riattiva i clic sugli overlay";
+"Settings…" = "Impostazioni…";
+"Quit" = "Esci";
+"RTSP Overlay – Settings" = "RTSP Overlay – Impostazioni";
+"Quit RTSP Overlay" = "Esci da RTSP Overlay";
+"Edit" = "Modifica";
+"Undo" = "Annulla";
+"Redo" = "Ripristina";
+"Cut" = "Taglia";
+"Copy" = "Copia";
+"Paste" = "Incolla";
+"Select All" = "Seleziona tutto";
+"Window" = "Finestra";
+"Close" = "Chiudi";
+
+/* Overlay */
+"High quality (main stream)" = "Alta qualità (stream principale)";
+"Always on top" = "Sempre in primo piano";
+"Opacity" = "Opacità";
+"Ignore clicks (re-enable from the menu bar)" = "Ignora i clic (si riattiva dalla barra dei menu)";
+"Reconnect" = "Ricollega";
+"Address not set.\nOpen Settings from the menu bar." = "Indirizzo non configurato.\nApri le Impostazioni dalla barra dei menu.";
+"Invalid address" = "Indirizzo non valido";
+"Connecting to %@…" = "Connessione a %@…";
+"Waiting for video…" = "In attesa del video…";
+"%@\nRetrying in 5 seconds…" = "%@\nNuovo tentativo tra 5 secondi…";
+
+/* Telecamere */
+"Main (high quality)" = "Principale (alta qualità)";
+"Sub (lightweight)" = "Secondario (leggero)";
+"New camera" = "Nuova telecamera";
+
+/* Impostazioni */
+"%@ · channel %lld" = "%@ · canale %lld";
+"Add camera" = "Aggiungi telecamera";
+"Remove camera" = "Rimuovi telecamera";
+"Duplicate on the next channel (handy for NVRs)" = "Duplica sul canale successivo (comodo per gli NVR)";
+"Add a camera with the + button" = "Aggiungi una telecamera con il pulsante +";
+"Select a camera" = "Seleziona una telecamera";
+"General" = "Generale";
+"Name" = "Nome";
+"Connection" = "Connessione";
+"IP address or host" = "Indirizzo IP o host";
+"192.168.1.100 or myhome.ddns.net" = "192.168.1.100 oppure miacasa.ddns.net";
+"RTSP port" = "Porta RTSP";
+"Username" = "Utente";
+"Password" = "Password";
+"Channel: %lld" = "Canale: %lld";
+"Default stream" = "Stream predefinito";
+"Custom path" = "Percorso personalizzato";
+"empty = /Streaming/Channels/…" = "vuoto = /Streaming/Channels/…";
+"Stream" = "Stream";
+"Camera connected directly: channel 1. With an NVR, the channel is the camera's input number. The sub stream is recommended for overlays: it is very light." = "Telecamera collegata direttamente: canale 1. Con un NVR il canale è il numero dell'ingresso della telecamera. Il secondario è consigliato per gli overlay: pesa pochissimo.";
+"Test connection" = "Prova connessione";
+"Testing…" = "Verifica in corso…";
+"Open as overlay" = "Apri in overlay";
+"Connected: %@ %lld×%lld" = "Connesso: %@ %lld×%lld";
+"Timeout: no frames received" = "Timeout: nessun fotogramma ricevuto";
+
+/* Errori di connessione */
+"Device unreachable (%@)" = "Dispositivo non raggiungibile (%@)";
+"Connection error: %@" = "Errore di connessione: %@";
+"The device did not return a session" = "Il dispositivo non ha restituito una sessione";
+"Timeout while connecting" = "Timeout durante la connessione";
+"No data received from the device" = "Nessun dato ricevuto dal dispositivo";
+"Invalid username or password (401)" = "Utente o password non validi (401)";
+"Access denied (403)" = "Accesso negato (403)";
+"Stream not found (404): check channel or path" = "Stream non trovato (404): controlla canale o percorso";
+"Not enough bandwidth or too many clients connected (453)" = "Banda insufficiente o troppi client connessi (453)";
+"Session not found (454)" = "Sessione non trovata (454)";
+"%@ refused: %lld %@" = "%@ rifiutato: %lld %@";
+"Unsupported authentication method" = "Metodo di autenticazione non supportato";
+"Send failed: %@" = "Invio fallito: %@";
+"Connection lost: %@" = "Connessione interrotta: %@";
+"Connection closed by the device" = "Connessione chiusa dal dispositivo";
+"Invalid RTSP response" = "Risposta RTSP non valida";
+"No video track in the stream" = "Nessuna traccia video nello stream";
+"unknown" = "sconosciuto";
+"Unsupported video codec: %@. Set H.264 or H.265 on the camera" = "Codec video non supportato: %@. Imposta H.264 o H.265 sulla telecamera";
